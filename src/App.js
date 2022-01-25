@@ -53,15 +53,18 @@ function App() {
             [...prevState].filter(contact => contact.id !== id),
         );
     };
-
+    const getContactsLength = getContacts();
     return (
         <div className="App">
             <Title>Phonebook</Title>
             <ContactForm onSubmit={addContact} />
             <Title>Contacts</Title>
             <Filter value={filter} onChange={changeFilter} />
-            {getContacts.length ? (
-                <ContactList contacts={getContacts} onDelete={deleteContact} />
+            {getContactsLength.length ? (
+                <ContactList
+                    contacts={getContactsLength}
+                    onDelete={deleteContact}
+                />
             ) : (
                 <Text>Nothing</Text>
             )}
