@@ -70,8 +70,12 @@ const BtnDelete = styled.button`
         color: #fff;
     }
 `;
+const Text = styled.p`
+    text-align: center;
+`;
 
 export {
+    Text,
     Title,
     Form,
     Wrapper,
