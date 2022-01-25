@@ -30,7 +30,7 @@ const Form = styled.form`
 `;
 
 const Wrapper = styled.div`
-    dispay: flex;
+    display: flex;
     flex-direction: column;
     margin: 5px auto;
 `;
